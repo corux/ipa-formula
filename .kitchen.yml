@@ -12,7 +12,6 @@ platforms:
 provisioner:
   name: salt_solo
   formula: ipa
-  vendor_path: srv/salt
   pillars-from-files:
     ipa.sls: pillar.example
   pillars:
