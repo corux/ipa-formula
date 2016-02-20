@@ -18,7 +18,7 @@ Available states
 
 Installs the IPA client and joins the IPA domain.
 
-``ipa.automated``
+``ipa.automount``
 -----------------
 
 Configures autofs for IPA clients. Includes the state ``ipa.client``.
