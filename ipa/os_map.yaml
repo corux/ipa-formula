@@ -1,0 +1,18 @@
+CentOS:
+  ipa:
+    pkgs:
+      client: ipa-client
+      server:
+        - ipa-server
+        - ipa-server-trust-ad
+        - ipa-server-dns
+        - bind-dyndb-ldap
+Fedora:
+  ipa:
+    pkgs:
+      client: freeipa-client
+      server:
+        - freeipa-server
+        - freeipa-server-trust-ad
+        - freeipa-server-dns
+        - bind-dyndb-ldap

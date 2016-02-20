@@ -1,0 +1,5 @@
+{% import_yaml 'ipa/defaults.yaml' as default_settings %}
+{% import_yaml 'ipa/os_map.yaml' as os_map %}
+{% set default_settings = salt['grains.filter_by'](os_map, grain='os', merge=default_settings) %}
+
+{% set ipa = salt['pillar.get']('ipa', default=default_settings.get('ipa'), merge=True) %}
