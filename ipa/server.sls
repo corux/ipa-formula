@@ -2,4 +2,4 @@
 
 ipa-server-pkgs:
   pkg.installed:
-    - pkgs: {{ ipa.pkgs.server }}
+    - pkgs: {{ ipa.pkgs.server|json }}
